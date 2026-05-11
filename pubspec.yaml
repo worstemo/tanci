@@ -1,0 +1,41 @@
+name: word_master
+description: 弹词 - 智能单词学习应用
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # 状态管理
+  provider: ^6.1.1
+  
+  # 数据库
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  path_provider: ^2.1.1
+  
+  # OCR识别
+  google_mlkit_text_recognition: ^0.11.0
+  image_picker: ^1.0.4
+  
+  # 通知
+  flutter_local_notifications: ^16.2.0
+  
+  # 工具
+  shared_preferences: ^2.2.2
+  intl: ^0.18.1
+  
+  # UI组件
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true

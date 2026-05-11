@@ -1,0 +1,33 @@
+# Binaries
+*.apk
+*.app
+*.ipa
+*.dmg
+
+# Flutter/Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+ios/
+web/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Android
+*.jks
+*.keystore
+local.properties
+.gradle/
+
+# macOS
+.DS_Store
+
+# Misc
+*.log
