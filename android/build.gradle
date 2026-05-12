@@ -33,12 +33,8 @@ subprojects {
     project.evaluationDependsOn(':app')
 }
 subprojects {
-    afterEvaluate { project ->
-        if (project.hasProperty('android')) {
-            project.android {
-                compileSdkVersion 35
-            }
-        }
+    project.plugins.withId('com.android.library') {
+        project.android.compileSdk = 35
     }
 }
 
