@@ -16,13 +16,6 @@ allprojects {
         google()
         mavenCentral()
     }
-    
-    configurations.all {
-        resolutionStrategy {
-            force 'androidx.core:core:1.13.1'
-            force 'androidx.core:core-ktx:1.13.1'
-        }
-    }
 }
 
 rootProject.buildDir = '../build'
@@ -31,11 +24,6 @@ subprojects {
 }
 subprojects {
     project.evaluationDependsOn(':app')
-}
-subprojects {
-    project.plugins.withId('com.android.library') {
-        project.android.compileSdk = 35
-    }
 }
 
 tasks.register("clean", Delete) {

@@ -18,8 +18,8 @@ dependencies:
   path: ^1.8.3
   path_provider: ^2.1.1
   
-  # OCR识别
-  google_mlkit_text_recognition: ^0.11.0
+  # OCR识别 - 降级到兼容版本
+  google_mlkit_text_recognition: ^0.13.0
   image_picker: ^1.0.4
   
   # 通知

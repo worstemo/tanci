@@ -65,17 +65,4 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'androidx.core:core:1.13.1'
-    implementation 'androidx.core:core-ktx:1.13.1'
-}
-
-// 强制所有子项目使用 compileSdk 35，解决 google_mlkit_commons 的 lStar 问题
-subprojects {
-    afterEvaluate { project ->
-        if (project.plugins.hasPlugin('com.android.library') || project.plugins.hasPlugin('com.android.application')) {
-            project.android {
-                compileSdk 35
-            }
-        }
-    }
 }
